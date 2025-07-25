@@ -1,0 +1,47 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(26, 65, 53);
+    height: 67px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: start;
+    justify-content: center;
+}
+
+li {
+    color: white;
+    padding: 20px 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: rgb(52, 90, 79);
+
+}
+
+#dropdown1 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(26, 65, 53);
+    width: fit-content;
+    gap: 0;
+        position: relative;
+    left: 50%;
+    transform: translateX(-60%);
+}
+
+.visible {
+    display: none !important;
+}
