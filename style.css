@@ -37,11 +37,41 @@ li:hover {
     background-color: rgb(26, 65, 53);
     width: fit-content;
     gap: 0;
-        position: relative;
+    position: absolute;
     left: 50%;
     transform: translateX(-60%);
 }
 
 .visible {
     display: none !important;
+}
+
+#imageContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+#imgElement { 
+    width: 50%;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.carousel-button {
+    width: 100px;
+    height: 100px;
+    border-radius: 9999px;
+    font-size: 2.5rem;
+    position: absolute;
+    z-index: 1000;
+    border: 1px solid black;
+    background: rgba(0, 0, 0, 0.411);
+    color: white;
+}
+
+#previous-button {
+    top: 100px;
 }
